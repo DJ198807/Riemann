@@ -1,65 +1,143 @@
-import Image from "next/image";
+import content from "@/data/content.json";
+import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
 
 export default function Home() {
+  const { profile, contributions } = content;
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <>
+      <Navigation />
+      <main className="min-h-screen bg-gradient-to-b from-slate-50 via-blue-50 to-purple-50 dark:from-slate-900 dark:via-purple-900/20 dark:to-slate-900">
+      {/* Hero Section */}
+      <section className="container mx-auto px-4 py-16 md:py-24">
+        <div className="flex flex-col md:flex-row items-center gap-12">
+          <div className="flex-1 space-y-6 animate-fadeInUp">
+            <h1 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600 bg-clip-text text-transparent animate-pulse-slow">
+              {profile.name}
+            </h1>
+            <p className="text-xl text-slate-600 dark:text-slate-300 animate-fadeInUp delay-200">
+              {profile.nativeName}
+            </p>
+            <p className="text-lg text-slate-700 dark:text-slate-300 animate-fadeInUp delay-300">
+              {profile.birth} - {profile.death}
+            </p>
+            <div className="flex flex-wrap gap-2 animate-fadeInUp delay-400">
+              {profile.tags.map((tag, index) => (
+                <span
+                  key={tag}
+                  className="px-4 py-2 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-full text-sm font-medium shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-scaleIn"
+                  style={{ animationDelay: `${index * 0.1}s` }}
+                >
+                  {tag}
+                </span>
+              ))}
+            </div>
+          </div>
+          <div className="flex-1 flex justify-center animate-fadeInUp delay-500">
+            <div className="relative">
+              <div className="absolute -inset-4 bg-gradient-to-r from-blue-500 to-purple-600 rounded-3xl blur-xl opacity-50 animate-pulse-slow"></div>
+              <img
+                src={profile.portrait}
+                alt={profile.name}
+                className="relative rounded-2xl shadow-2xl max-w-md w-full animate-float"
+                style={{ maxWidth: '300px' }}
+              />
+            </div>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
+      </section>
+
+      {/* Biography Section */}
+      <section className="container mx-auto px-4 py-16">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-8 animate-fadeInUp">
+            Biography
+          </h2>
+          <div className="bg-gradient-to-br from-white to-blue-50 dark:from-slate-800 dark:to-purple-900/30 rounded-2xl shadow-2xl p-8 space-y-6 backdrop-blur-strong animate-fadeInUp delay-200">
+            <p className="text-lg text-slate-700 dark:text-slate-300 leading-relaxed animate-fadeInUp delay-300">
+              {profile.biography}
+            </p>
+            <p className="text-lg text-slate-700 dark:text-slate-300 leading-relaxed animate-fadeInUp delay-400">
+              {profile.legacy}
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Quick Links */}
+      <section className="container mx-auto px-4 py-16">
+        <div className="max-w-6xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="#contributions"
+            className="group bg-gradient-to-br from-white to-blue-50 dark:from-slate-800 dark:to-purple-900/30 rounded-2xl shadow-xl p-8 hover:shadow-3xl transition-all duration-500 hover:-translate-y-2 animate-fadeInUp delay-300 backdrop-blur-strong"
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
+            <div className="text-4xl mb-4 animate-float">∫</div>
+            <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-4 group-hover:text-blue-600 transition-colors">
+              Key Contributions
+            </h3>
+            <p className="text-slate-600 dark:text-slate-300">
+              Explore Riemann's revolutionary work in mathematics
+            </p>
           </a>
           <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/timeline"
+            className="group bg-gradient-to-br from-white to-purple-50 dark:from-slate-800 dark:to-blue-900/30 rounded-2xl shadow-xl p-8 hover:shadow-3xl transition-all duration-500 hover:-translate-y-2 animate-fadeInUp delay-400 backdrop-blur-strong"
           >
-            Documentation
+            <div className="text-4xl mb-4 animate-float">∑</div>
+            <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-4 group-hover:text-purple-600 transition-colors">
+              Life Timeline
+            </h3>
+            <p className="text-slate-600 dark:text-slate-300">
+              Journey through Riemann's life and major achievements
+            </p>
+          </a>
+          <a
+            href="/resources"
+            className="group bg-gradient-to-br from-white to-pink-50 dark:from-slate-800 dark:to-pink-900/30 rounded-2xl shadow-xl p-8 hover:shadow-3xl transition-all duration-500 hover:-translate-y-2 animate-fadeInUp delay-500 backdrop-blur-strong">
+            <div className="text-4xl mb-4 animate-float">π</div>
+            <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-4 group-hover:text-pink-600 transition-colors">
+              Resources
+            </h3>
+            <p className="text-slate-600 dark:text-slate-300">
+              Books, videos, and references about Riemann
+            </p>
           </a>
         </div>
-      </main>
-    </div>
+      </section>
+
+      {/* Contributions Preview */}
+      <section id="contributions" className="container mx-auto px-4 py-16">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-12 text-center animate-fadeInUp">
+            Key Contributions
+          </h2>
+          <div className="grid md:grid-cols-2 gap-8">
+            {contributions.map((contribution, index) => (
+              <article
+                key={contribution.title}
+                className="group bg-gradient-to-br from-white via-blue-50 to-purple-50 dark:from-slate-800 dark:via-purple-900/20 dark:to-blue-900/20 rounded-2xl p-8 shadow-xl hover:shadow-3xl transition-all duration-500 hover:-translate-y-2 animate-fadeInUp backdrop-blur-strong"
+                style={{ animationDelay: `${index * 0.15}s` }}
+              >
+                <div className="flex items-start justify-between mb-4">
+                  <h3 className="text-xl font-bold text-slate-900 dark:text-white group-hover:text-blue-600 transition-colors">
+                    {contribution.title}
+                  </h3>
+                  <span className="px-4 py-2 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-full text-sm font-medium shadow-lg hover:shadow-xl transition-all duration-300 animate-pulse-slow">
+                    {contribution.year}
+                  </span>
+                </div>
+                <p className="text-slate-700 dark:text-slate-300 mb-4">{contribution.description}</p>
+                <p className="text-sm text-slate-600 dark:text-slate-400 font-medium">
+                  <span className="text-blue-600 dark:text-blue-400">Impact:</span> {contribution.impact}
+                </p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+      <Footer />
+    </main>
+    </>
   );
 }

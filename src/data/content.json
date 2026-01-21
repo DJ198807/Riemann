@@ -1,0 +1,101 @@
+{
+  "profile": {
+    "name": "Bernhard Riemann",
+    "nativeName": "Georg Friedrich Bernhard Riemann",
+  "birth": "1826/9/17",
+  "death": "1866/7/20",
+    "nationality": "German",
+    "portrait": "/riemann.jpg",
+    "institution": "University of Göttingen",
+    "fields": ["Number Theory", "Complex Analysis", "Differential Geometry", "Mathematical Physics"],
+    "tags": ["Riemann Hypothesis", "Riemann Geometry", "Manifolds", "Riemann Zeta Function"],
+    "biography": "Georg Friedrich Bernhard Riemann (1826-1866) was a German mathematician who made profound contributions to analysis, number theory, and differential geometry. His work laid the foundation for much of modern mathematics and physics, including Einstein's theory of general relativity.",
+    "legacy": "Riemann's ideas continue to influence mathematics and physics today, with the Riemann Hypothesis remaining one of the most important unsolved problems in mathematics."
+  },
+  "milestones": [
+    {
+      "year": 1846,
+      "event": "Entered University of Göttingen to study theology, later switched to mathematics under Gauss"
+    },
+    {
+      "year": 1851,
+      "event": "Presented doctoral thesis on the theory of functions of a complex variable"
+    },
+    {
+      "year": 1854,
+      "event": "Delivered famous habilitation lecture 'On the Hypotheses which Lie at the Foundations of Geometry', introducing Riemannian geometry"
+    },
+    {
+      "year": 1859,
+      "event": "Became professor at Göttingen; published paper on prime numbers introducing the Riemann zeta function and Riemann Hypothesis"
+    }
+  ],
+  "contributions": [
+    {
+      "title": "Riemann Hypothesis",
+      "year": 1859,
+      "description": "The conjecture about the distribution of prime numbers, regarding the zeros of the Riemann zeta function. It remains one of the most important unsolved problems in mathematics and is one of the Clay Mathematics Institute's Millennium Prize Problems.",
+      "impact": "Fundamental to number theory and has connections to cryptography, quantum mechanics, and random matrix theory."
+    },
+    {
+      "title": "Riemannian Geometry",
+      "year": 1854,
+      "description": "A generalization of non-Euclidean geometry that studies curved spaces using the concept of a metric tensor. This framework became essential for Einstein's theory of general relativity.",
+      "impact": "Provided the mathematical foundation for describing curved spacetime in physics and modern differential geometry."
+    },
+    {
+      "title": "Complex Analysis and Riemann Surfaces",
+      "year": 1851,
+      "description": "Revolutionary work on functions of complex variables and the concept of Riemann surfaces as multi-sheeted coverings of the complex plane.",
+      "impact": "Fundamental to modern complex analysis, algebraic geometry, and string theory in physics."
+    },
+    {
+      "title": "Riemann Integral",
+      "year": 1853,
+      "description": "A rigorous definition of the definite integral using the concept of upper and lower sums, providing a foundation for integration theory.",
+      "impact": "Became the standard definition of integration in mathematics education for over a century."
+    }
+  ],
+  "media": {
+    "videos": [
+      {
+        "title": "The Riemann Hypothesis Explained",
+        "source": "Numberphile",
+        "url": "https://www.youtube.com/watch?v=zlm1aajH6gY"
+      },
+      {
+        "title": "Riemann's Habilitation Lecture",
+        "source": "3Blue1Brown",
+        "url": "https://www.youtube.com/watch?v=Ad0ZnIn4k3Y"
+      }
+    ],
+    "books": [
+      {
+        "title": "Riemann's Zeta Function",
+        "author": "H.M. Edwards",
+        "year": 1974,
+        "description": "A comprehensive treatment of the Riemann zeta function and the Riemann Hypothesis."
+      },
+      {
+        "title": "Bernhard Riemann 1826-1866: Turning Points in the Conception of Mathematics",
+        "author": "Detlef Laugwitz",
+        "year": 1999,
+        "description": "A detailed biography and analysis of Riemann's mathematical contributions."
+      }
+    ]
+  },
+  "references": [
+    {
+      "title": "The Works of Bernhard Riemann",
+      "publisher": "Dover Publications",
+      "year": 1953,
+      "url": "https://archive.org/details/worksofbernhardr00riemrich"
+    },
+    {
+      "title": "Prime Obsession: Bernhard Riemann and the Greatest Unsolved Problem in Mathematics",
+      "author": "John Derbyshire",
+      "publisher": "Joseph Henry Press",
+      "year": 2003
+    }
+  ]
+}
