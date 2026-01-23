@@ -10,7 +10,7 @@ export default function Footer() {
             className="relative group"
           >
             <span className="text-lg font-medium hover:text-yellow-300 transition-colors duration-300">
-              Home
+              首页
             </span>
             <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-purple-500 transition-all duration-300 group-hover:w-full"></span>
           </Link>
@@ -19,7 +19,7 @@ export default function Footer() {
             className="relative group"
           >
             <span className="text-lg font-medium hover:text-yellow-300 transition-colors duration-300">
-              Timeline
+              时间线
             </span>
             <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-purple-500 transition-all duration-300 group-hover:w-full"></span>
           </Link>
@@ -28,7 +28,7 @@ export default function Footer() {
             className="relative group"
           >
             <span className="text-lg font-medium hover:text-yellow-300 transition-colors duration-300">
-              Resources
+              资源
             </span>
             <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-purple-500 transition-all duration-300 group-hover:w-full"></span>
           </Link>
@@ -43,7 +43,7 @@ export default function Footer() {
         </div>
 
         <p className="text-center text-slate-400 text-sm">
-          © {new Date().getFullYear()} Bernhard Riemann Tribute Project
+          © {new Date().getFullYear()} 伯恩哈德·黎曼纪念项目
         </p>
       </nav>
     </footer>

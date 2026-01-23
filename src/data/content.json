@@ -1,100 +1,100 @@
 {
   "profile": {
-    "name": "Bernhard Riemann",
-    "nativeName": "Georg Friedrich Bernhard Riemann",
-  "birth": "1826/9/17",
-  "death": "1866/7/20",
-    "nationality": "German",
+    "name": "伯恩哈德·黎曼",
+    "nativeName": "格奥尔格·弗里德里希·伯恩哈德·黎曼",
+  "birth": "1826年9月17日",
+  "death": "1866年7月20日",
+    "nationality": "德国",
     "portrait": "/riemann.jpg",
-    "institution": "University of Göttingen",
-    "fields": ["Number Theory", "Complex Analysis", "Differential Geometry", "Mathematical Physics"],
-    "tags": ["Riemann Hypothesis", "Riemann Geometry", "Manifolds", "Riemann Zeta Function"],
-    "biography": "Georg Friedrich Bernhard Riemann (1826-1866) was a German mathematician who made profound contributions to analysis, number theory, and differential geometry. His work laid the foundation for much of modern mathematics and physics, including Einstein's theory of general relativity.",
-    "legacy": "Riemann's ideas continue to influence mathematics and physics today, with the Riemann Hypothesis remaining one of the most important unsolved problems in mathematics."
+    "institution": "哥廷根大学",
+    "fields": ["数论", "复分析", "微分几何", "数学物理"],
+    "tags": ["黎曼猜想", "黎曼几何", "流形", "黎曼ζ函数"],
+    "biography": "格奥尔格·弗里德里希·伯恩哈德·黎曼（1826-1866）是德国数学家，在分析学、数论和微分几何领域做出了卓越贡献。他的工作为现代数学和物理奠定了基础，包括爱因斯坦的广义相对论。",
+    "legacy": "黎曼的思想至今仍影响着数学和物理学的发展，其中黎曼猜想仍然是数学界最重要的未解问题之一。"
   },
   "milestones": [
     {
-      "year": 1846,
-      "event": "Entered University of Göttingen to study theology, later switched to mathematics under Gauss"
+      "year": "1846",
+      "event": "进入哥廷根大学学习神学，后在高斯指导下转入数学系"
     },
     {
-      "year": 1851,
-      "event": "Presented doctoral thesis on the theory of functions of a complex variable"
+      "year": "1851",
+      "event": "提交了关于复变量函数理论的博士论文"
     },
     {
-      "year": 1854,
-      "event": "Delivered famous habilitation lecture 'On the Hypotheses which Lie at the Foundations of Geometry', introducing Riemannian geometry"
+      "year": "1854",
+      "event": "发表了著名的就职演说《论作为几何学基础的假设》，引入了黎曼几何"
     },
     {
-      "year": 1859,
-      "event": "Became professor at Göttingen; published paper on prime numbers introducing the Riemann zeta function and Riemann Hypothesis"
+      "year": "1859",
+      "event": "成为哥廷根大学教授；发表关于素数的论文，介绍了黎曼ζ函数和黎曼猜想"
     }
   ],
   "contributions": [
     {
-      "title": "Riemann Hypothesis",
-      "year": 1859,
-      "description": "The conjecture about the distribution of prime numbers, regarding the zeros of the Riemann zeta function. It remains one of the most important unsolved problems in mathematics and is one of the Clay Mathematics Institute's Millennium Prize Problems.",
-      "impact": "Fundamental to number theory and has connections to cryptography, quantum mechanics, and random matrix theory."
+      "title": "黎曼猜想",
+      "year": "1859",
+      "description": "关于素数分布的猜想，涉及黎曼ζ函数的零点。这是数学界最重要的未解问题之一，也是克雷数学研究所的千禧年大奖难题之一。",
+      "impact": "对数论领域至关重要，与密码学、量子力学和随机矩阵理论密切相关。"
     },
     {
-      "title": "Riemannian Geometry",
-      "year": 1854,
-      "description": "A generalization of non-Euclidean geometry that studies curved spaces using the concept of a metric tensor. This framework became essential for Einstein's theory of general relativity.",
-      "impact": "Provided the mathematical foundation for describing curved spacetime in physics and modern differential geometry."
+      "title": "黎曼几何",
+      "year": "1854",
+      "description": "非欧几里得几何的推广，使用度量张量的概念研究弯曲空间。这一框架成为爱因斯坦广义相对论的基础。",
+      "impact": "为物理学中描述弯曲时空和现代微分几何提供了数学基础。"
     },
     {
-      "title": "Complex Analysis and Riemann Surfaces",
-      "year": 1851,
-      "description": "Revolutionary work on functions of complex variables and the concept of Riemann surfaces as multi-sheeted coverings of the complex plane.",
-      "impact": "Fundamental to modern complex analysis, algebraic geometry, and string theory in physics."
+      "title": "复分析与黎曼曲面",
+      "year": "1851",
+      "description": "对复变量函数的革命性研究，引入了黎曼曲面作为复平面的多层覆盖的概念。",
+      "impact": "对现代复分析、代数几何和物理学中的弦理论具有重要意义。"
     },
     {
-      "title": "Riemann Integral",
-      "year": 1853,
-      "description": "A rigorous definition of the definite integral using the concept of upper and lower sums, providing a foundation for integration theory.",
-      "impact": "Became the standard definition of integration in mathematics education for over a century."
+      "title": "黎曼积分",
+      "year": "1853",
+      "description": "使用上和与下和的概念对定积分进行严格定义，为积分理论奠定了基础。",
+      "impact": "成为数学教育中积分的标准定义长达一个多世纪。"
     }
   ],
   "media": {
     "videos": [
       {
-        "title": "The Riemann Hypothesis Explained",
+        "title": "黎曼猜想解释",
         "source": "Numberphile",
         "url": "https://www.youtube.com/watch?v=zlm1aajH6gY"
       },
       {
-        "title": "Riemann's Habilitation Lecture",
+        "title": "黎曼的就职演说",
         "source": "3Blue1Brown",
         "url": "https://www.youtube.com/watch?v=Ad0ZnIn4k3Y"
       }
     ],
     "books": [
       {
-        "title": "Riemann's Zeta Function",
+        "title": "黎曼ζ函数",
         "author": "H.M. Edwards",
         "year": 1974,
-        "description": "A comprehensive treatment of the Riemann zeta function and the Riemann Hypothesis."
+        "description": "关于黎曼ζ函数和黎曼猜想的综合论述。"
       },
       {
-        "title": "Bernhard Riemann 1826-1866: Turning Points in the Conception of Mathematics",
+        "title": "伯恩哈德·黎曼 1826-1866：数学观念的转折点",
         "author": "Detlef Laugwitz",
         "year": 1999,
-        "description": "A detailed biography and analysis of Riemann's mathematical contributions."
+        "description": "黎曼的详细传记和数学贡献分析。"
       }
     ]
   },
   "references": [
     {
-      "title": "The Works of Bernhard Riemann",
-      "publisher": "Dover Publications",
+      "title": "伯恩哈德·黎曼著作集",
+      "publisher": "多佛出版社",
       "year": 1953,
       "url": "https://archive.org/details/worksofbernhardr00riemrich"
     },
     {
-      "title": "Prime Obsession: Bernhard Riemann and the Greatest Unsolved Problem in Mathematics",
+      "title": "素数痴迷：伯恩哈德·黎曼与数学史上最大的未解之谜",
       "author": "John Derbyshire",
-      "publisher": "Joseph Henry Press",
+      "publisher": "约瑟夫·亨利出版社",
       "year": 2003
     }
   ]

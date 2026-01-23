@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import ThemeToggle from "./ThemeToggle";
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,11 +12,6 @@ export default function Navigation() {
         <div className="flex justify-between items-center py-4">
           <Link href="/" className="flex items-center gap-2 group">
             <div className="text-4xl font-bold text-white animate-float">π</div>
-            <div>
-              <span className="text-2xl font-bold text-white group-hover:text-yellow-300 transition-colors duration-300">
-                Riemann
-              </span>
-            </div>
           </Link>
 
           {/* Desktop Menu */}
@@ -26,21 +20,20 @@ export default function Navigation() {
               href="/"
               className="text-white hover:text-yellow-300 transition-all duration-300 font-medium hover:scale-110 transform"
             >
-              Home
+              首页
             </Link>
             <Link
               href="/timeline"
               className="text-white hover:text-yellow-300 transition-all duration-300 font-medium hover:scale-110 transform"
             >
-              Timeline
+              时间线
             </Link>
             <Link
               href="/resources"
               className="text-white hover:text-yellow-300 transition-all duration-300 font-medium hover:scale-110 transform"
             >
-              Resources
+              资源
             </Link>
-            <ThemeToggle />
           </div>
 
           {/* Mobile Menu Button */}
@@ -82,25 +75,22 @@ export default function Navigation() {
               className="block py-2 text-white hover:text-yellow-300 transition-colors font-medium"
               onClick={() => setIsOpen(false)}
             >
-              Home
+              首页
             </Link>
             <Link
               href="/timeline"
               className="block py-2 text-white hover:text-yellow-300 transition-colors font-medium"
               onClick={() => setIsOpen(false)}
             >
-              Timeline
+              时间线
             </Link>
             <Link
               href="/resources"
               className="block py-2 text-white hover:text-yellow-300 transition-colors font-medium"
               onClick={() => setIsOpen(false)}
             >
-              Resources
+              资源
             </Link>
-            <div className="mt-4">
-              <ThemeToggle />
-            </div>
           </div>
         )}
       </div>

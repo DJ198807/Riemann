@@ -1,6 +1,7 @@
 import content from "@/data/content.json";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import ChatWidget from "@/components/ChatWidget";
 
 export default function Home() {
   const { profile, contributions } = content;
@@ -43,6 +44,7 @@ export default function Home() {
                 className="relative rounded-2xl shadow-2xl max-w-md w-full animate-float"
                 style={{ maxWidth: '300px' }}
               />
+              <ChatWidget />
             </div>
           </div>
         </div>
@@ -52,7 +54,7 @@ export default function Home() {
       <section className="container mx-auto px-4 py-16">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-8 animate-fadeInUp">
-            Biography
+            生平
           </h2>
           <div className="bg-gradient-to-br from-white to-blue-50 dark:from-slate-800 dark:to-purple-900/30 rounded-2xl shadow-2xl p-8 space-y-6 backdrop-blur-strong animate-fadeInUp delay-200">
             <p className="text-lg text-slate-700 dark:text-slate-300 leading-relaxed animate-fadeInUp delay-300">
@@ -74,10 +76,10 @@ export default function Home() {
           >
             <div className="text-4xl mb-4 animate-float">∫</div>
             <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-4 group-hover:text-blue-600 transition-colors">
-              Key Contributions
+              主要贡献
             </h3>
             <p className="text-slate-600 dark:text-slate-300">
-              Explore Riemann's revolutionary work in mathematics
+              探索黎曼在数学上的革命性工作
             </p>
           </a>
           <a
@@ -86,10 +88,10 @@ export default function Home() {
           >
             <div className="text-4xl mb-4 animate-float">∑</div>
             <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-4 group-hover:text-purple-600 transition-colors">
-              Life Timeline
+              人生时间线
             </h3>
             <p className="text-slate-600 dark:text-slate-300">
-              Journey through Riemann's life and major achievements
+              了解黎曼的生平和主要成就
             </p>
           </a>
           <a
@@ -97,10 +99,10 @@ export default function Home() {
             className="group bg-gradient-to-br from-white to-pink-50 dark:from-slate-800 dark:to-pink-900/30 rounded-2xl shadow-xl p-8 hover:shadow-3xl transition-all duration-500 hover:-translate-y-2 animate-fadeInUp delay-500 backdrop-blur-strong">
             <div className="text-4xl mb-4 animate-float">π</div>
             <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-4 group-hover:text-pink-600 transition-colors">
-              Resources
+              学习资源
             </h3>
             <p className="text-slate-600 dark:text-slate-300">
-              Books, videos, and references about Riemann
+              关于黎曼的书籍、视频和参考资料
             </p>
           </a>
         </div>
@@ -110,7 +112,7 @@ export default function Home() {
       <section id="contributions" className="container mx-auto px-4 py-16">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-12 text-center animate-fadeInUp">
-            Key Contributions
+            主要贡献
           </h2>
           <div className="grid md:grid-cols-2 gap-8">
             {contributions.map((contribution, index) => (
@@ -129,7 +131,7 @@ export default function Home() {
                 </div>
                 <p className="text-slate-700 dark:text-slate-300 mb-4">{contribution.description}</p>
                 <p className="text-sm text-slate-600 dark:text-slate-400 font-medium">
-                  <span className="text-blue-600 dark:text-blue-400">Impact:</span> {contribution.impact}
+                  <span className="text-blue-600 dark:text-blue-400">影响：</span> {contribution.impact}
                 </p>
               </article>
             ))}

@@ -19,9 +19,19 @@ export default function ThemeToggle() {
   }, []);
 
   const toggleTheme = () => {
-    setIsDark(!isDark);
-    document.documentElement.classList.toggle("dark");
-    localStorage.setItem("theme", isDark ? "light" : "dark");
+    setIsDark((prevIsDark) => {
+      const newIsDark = !prevIsDark;
+      
+      if (newIsDark) {
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+      }
+      
+      localStorage.setItem("theme", newIsDark ? "dark" : "light");
+      
+      return newIsDark;
+    });
   };
 
   // 在组件挂载之前不渲染任何内容，避免 SSR 错误
